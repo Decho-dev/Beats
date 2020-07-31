@@ -1,0 +1,41 @@
+@media screen and (max-width: 640px){
+	main{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: 
+		"solo"
+		"second-roww"
+		"studio"
+		"gallery";
+	}
+	.solo{
+		grid-area: solo;
+	}
+	.second-row{
+		display: grid;
+		grid-area: second-roww;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: 
+		"mixr mixr"
+		"urbeats-rightt urbeats-rightt";
+	}
+	.urbeats-right{
+		grid-area: urbeats-rightt;
+		width: 100%;
+	}
+	.studio{
+		grid-area: studio;
+	}
+	.grid-gallery{
+		grid-area: gallery;
+	}
+	.mixr-left{
+		grid-area: mixr;
+		width: 100%;
+	}
+	.grid-gallery{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+}
